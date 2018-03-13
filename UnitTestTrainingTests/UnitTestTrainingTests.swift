@@ -11,6 +11,9 @@ import XCTest
 
 class UnitTestTrainingTests: XCTestCase {
     
+    
+    let viewModel = LoginViewModel()
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,16 +24,30 @@ class UnitTestTrainingTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testWhenUsernameEmptyShouldReturnFalseMessage(){
+        let result = viewModel.login(username: "", password: "abcgsdfgsd")
+        XCTAssertEqual("Username should not empty", result)
+    }
+
+    func testWhenPasswordLessThenSixShouldReturnFalseMessage(){
+        
+        let username = "aaa"
+        
+        let result = viewModel.login(username: username, password: "abce")
+        
+        XCTAssertEqual("Password should be greater than six", result)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testImageCountFormat(){
+        let result = viewModel.formateMessage(count: 25)
+        XCTAssertEqual("25 Images", result)
+        
     }
+    
+    
+    
+
+    
     
 }

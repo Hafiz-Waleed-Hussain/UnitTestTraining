@@ -13,6 +13,8 @@
 		7E592DDA2057B24C00EA7DCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E592DD92057B24C00EA7DCB /* Assets.xcassets */; };
 		7E592DDD2057B24C00EA7DCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E592DDB2057B24C00EA7DCB /* LaunchScreen.storyboard */; };
 		7E592DE82057B24D00EA7DCB /* UnitTestTrainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E592DE72057B24D00EA7DCB /* UnitTestTrainingTests.swift */; };
+		7E592DF52057C28500EA7DCB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E592DF42057C28500EA7DCB /* LoginViewModel.swift */; };
+		7E592DF62057C28500EA7DCB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E592DF42057C28500EA7DCB /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		7E592DE32057B24D00EA7DCB /* UnitTestTrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestTrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E592DE72057B24D00EA7DCB /* UnitTestTrainingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestTrainingTests.swift; sourceTree = "<group>"; };
 		7E592DE92057B24D00EA7DCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E592DF42057C28500EA7DCB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 				7E592DD62057B24C00EA7DCB /* Main.storyboard */,
 				7E592DD92057B24C00EA7DCB /* Assets.xcassets */,
 				7E592DDB2057B24C00EA7DCB /* LaunchScreen.storyboard */,
+				7E592DF42057C28500EA7DCB /* LoginViewModel.swift */,
 				7E592DDE2057B24C00EA7DCB /* Info.plist */,
 			);
 			path = UnitTestTraining;
@@ -201,6 +205,7 @@
 			files = (
 				7E592DD52057B24C00EA7DCB /* ViewController.swift in Sources */,
 				7E592DD32057B24C00EA7DCB /* AppDelegate.swift in Sources */,
+				7E592DF52057C28500EA7DCB /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E592DF62057C28500EA7DCB /* LoginViewModel.swift in Sources */,
 				7E592DE82057B24D00EA7DCB /* UnitTestTrainingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

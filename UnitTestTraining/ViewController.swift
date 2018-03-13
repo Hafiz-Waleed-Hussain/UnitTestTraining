@@ -10,6 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let viewModel = LoginViewModel()
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
+    @IBAction func loginClick(_ sender: Any) {
+        let result = viewModel.login(username: username.text!, password: password.text!)
+        if(result == "Sucess"){
+            print("Success")
+        }else{
+            print(result)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
